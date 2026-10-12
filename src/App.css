@@ -1,0 +1,167 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f7;
+  color: #263238;
+}
+
+header {
+  background: #52245b;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 15px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+nav a,
+nav button {
+  color: white;
+  text-decoration: none;
+  background: #39765d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+nav a.active,
+nav a:hover,
+nav button:hover {
+  background: #33163e;
+}
+
+main {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 0 18px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 22px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000012;
+}
+
+.login {
+  max-width: 450px;
+  margin: 35px auto;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c7ced3;
+  border-radius: 5px;
+  font: inherit;
+}
+
+button {
+  padding: 9px 13px;
+  border: none;
+  border-radius: 5px;
+  background: #ae2ac2;
+  color: white;
+  cursor: pointer;
+  margin: 3px;
+}
+
+button:hover {
+  background: #80289b;
+}
+
+button.delete {
+  background: #b52b35;
+}
+
+button.delete:hover {
+  background: #861e26;
+}
+
+.error {
+  color: #c62828;
+  font-size: 0.9rem;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.book {
+  padding: 16px;
+  border: 1px solid #dce2e6;
+  border-radius: 6px;
+  background: #fafcfd;
+}
+
+.book p {
+  margin: 8px 0;
+}
+
+.low {
+  background: #fff0f0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 11px;
+  border-bottom: 1px solid #dce2e6;
+}
+
+th {
+  background: #e9efec;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  main {
+    padding: 0 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
